@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_converter"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_converter" />
+
+    <item
+        android:id="@+id/navigation_graphs"
+        android:icon="@drawable/ic_graps"
+        android:title="@string/title_graphs" />
+</menu>

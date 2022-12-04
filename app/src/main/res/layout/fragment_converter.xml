@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.converter.ConverterFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_marginEnd="5dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/choose_currency_button"
+            android:text="Wybierz"/>
+
+        <EditText
+            android:layout_marginStart="5dp"
+            android:text="1"
+            android:inputType="number"
+            android:digits="0123456789."
+            android:gravity="end"
+            android:textAlignment="gravity"
+
+            android:maxLines="1"
+            android:id="@+id/amount_ed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/currencies_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"/>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/fab"
+        app:srcCompat="@drawable/ic_add"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"/>
+
+</LinearLayout>
